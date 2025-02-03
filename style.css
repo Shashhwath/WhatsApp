@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+#Green
+{
+    background-color: #198d19;
+    position:relative;
+    height:100px;
+    width:100vw;
+}
+body{
+    background-color: #ECE5DD;
+}
+.Message
+{
+    background-color: white;
+    position:absolute;
+    margin-top:50px;
+    height:730px;
+    width:1400px;
+    margin-left: 50px;
+    
+}
+#container
+{
+    display: flex;
+    justify-content: space-between;
+}
+#AllChat
+{
+    width:500px;
+    height:300px;
+    background-color: white;
+    border-right: black;
+}
+.SingleChat
+{
+    position: relative;
+    width:100%;
+    height: 100%;
+    background-color: red;
+}
+#ChatTop
+{
+    background-color: #e6e6e6;
+    height:70px;
+    width:100%;
+    position: relative;
+
+}
+#AllChatTop
+{
+    background-color: 	#e6e6e6;
+    height:70px;
+    width:500px;
+}
+
+.circle-image {
+    width: 50px; 
+    height: 50px;
+    object-fit: cover; 
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 300px;
+}
+
+.Message-image
+{
+    height:40px;
+    width:40px;
+    margin-bottom: 10px;;
+}
