@@ -22,8 +22,26 @@
                 </div>
                 <div class="SingleChat">
                     <div id="ChatTop">
-                        <img src="Boy.jpg"  class="circle-image">
-                        <div class="Chat"></div>
+                        <img src="user.png"  class="circle-image">
+                        <div class="ProfileName"><h1 id="chat-name">Abishek</h1></div>                    
+                    </div>
+                    <div class="Chat" id="Chat">
+                        <div id="messages"> 
+                        <div class="Footer">
+                          <div class="TypeMessage">
+                             <img src="happy.png" class="Emoji">
+                             <input type="text" placeholder="Type Message" class="TypeText" id="input-text">
+                             <img src="attach-file.png" class="Emoji">
+                             <img src="rupee.png" class="Emoji">
+                             <img src="camera.png" class="Emoji">
+                             <button id="send-button"> <img src="send.png" class="Emoji"></button>
+                            
+                           </div>
+                           <div class="VoiceMessage">
+                              <img src="voice-recording.png" class="Emoji">
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -33,16 +51,38 @@
 </body>
 <script>
 
-     names=["Abishek","Gokul","BalaGanesh","DineshKumar","Amma","Ragavaa","Dharaneesh","Kamal"];
+     names=["Abishek","Gokul","BalaGanesh","DineshKumar","Amma","Ragavaa","Dharaneesh","Kamal","Gowtham","Vellore Dhinesh"];
      let NameList = document.getElementById("NameList");
      names.forEach( name =>
         {
-            let div =document.createElement("div");
+            const div =document.createElement("div");
             div.classList.add("Contact");
             div.textContent=name;
             NameList.appendChild(div);
         }
      )
+
+     
+
+
+
+     document.getElementById("send-button").addEventListener("click", () => {
+        const text = document.getElementById("input-text").value
+        
+        document.getElementById("input-text").value = ""
+
+        const messages = document.getElementById("messages")
+
+        const messageItem = document.createElement('div')
+        const textItem = document.createElement('p')
+        messageItem.classList.add("ChatMessage")
+        textItem.textContent = text
+
+        messageItem.appendChild(textItem)
+        console.log(messageItem)
+        messages.appendChild(messageItem)
+     })
+ 
 
 </script>
 </html>
