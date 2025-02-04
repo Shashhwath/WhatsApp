@@ -12,14 +12,14 @@
     width:100vw;
 }
 body{
-    background-color: #ECE5DD;
+    background-color: white;
 }
 .Message
 {
     background-color: white;
     position:absolute;
     margin-top:50px;
-    height:730px;
+    height:720px;
     width:1400px;
     margin-left: 50px;
     
@@ -32,9 +32,11 @@ body{
 #AllChat
 {
     width:500px;
-    height:300px;
+    height:720px;
     background-color: white;
     border-right: black;
+    box-shadow: 8px 0px 12px rgba(0, 0, 0, 0.15);
+
 }
 .SingleChat
 {
@@ -74,4 +76,21 @@ body{
     height:40px;
     width:40px;
     margin-bottom: 10px;;
+}
+.Contact
+{
+    height:5rem;
+    width:500px;
+    border:black;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 2rem;
+    padding-left: 5px;
+}
+.Chat
+{
+    height:660px;
+    width:100%;
+    background-color: black;
+    background-image: url("28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
 }

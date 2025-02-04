@@ -16,11 +16,14 @@
                       <img src="comment.png" class="Message-image">
                        <img src="more.png" class="Message-image"> 
                     </div>
+                    <div id="NameList">
+
+                    </div>
                 </div>
                 <div class="SingleChat">
                     <div id="ChatTop">
                         <img src="Boy.jpg"  class="circle-image">
-                        <p>King</p>
+                        <div class="Chat"></div>
                     </div>
                 </div>
             </div>
@@ -28,4 +31,18 @@
     </div>
 
 </body>
+<script>
+
+     names=["Abishek","Gokul","BalaGanesh","DineshKumar","Amma","Ragavaa","Dharaneesh","Kamal"];
+     let NameList = document.getElementById("NameList");
+     names.forEach( name =>
+        {
+            let div =document.createElement("div");
+            div.classList.add("Contact");
+            div.textContent=name;
+            NameList.appendChild(div);
+        }
+     )
+
+</script>
 </html>
